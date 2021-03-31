@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Administrador de peliculas</string>
+    <string name="ingresar_pelicula">Ingrese la pelicula deseada</string>
+    <string name="guardar_pelicula">Pelicula Guardada Correctamente</string>
+
+</resources>
