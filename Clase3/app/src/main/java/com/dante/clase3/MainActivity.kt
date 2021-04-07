@@ -1,14 +1,17 @@
 package com.dante.clase3
 
 import android.content.Intent
+import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.dante.clase3.model.Pelicula
 import java.util.*
+import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,10 +43,20 @@ class MainActivity : AppCompatActivity() {
 
             i.putExtra("objectPeli",peli)
 
+
+
             startActivity(i)
 
 
         })
 
+    }
+
+    fun algo( peso: Double,  altura:Double):Any {
+
+        if (peso < 18) {
+            return R.mipmap.btf
+        }
+        return R.mipmap.btf
     }
 }
