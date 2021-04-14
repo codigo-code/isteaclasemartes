@@ -49,6 +49,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r_e_pass" />
 
+    <TextView
+        android:id="@+id/r_t_mensajeError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_e_pass" />
+
     <Button
         android:id="@+id/r_b_ok"
         android:layout_width="152dp"

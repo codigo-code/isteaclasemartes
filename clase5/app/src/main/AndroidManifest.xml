@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Clase5">
-        <activity android:name=".InicioActitivy"></activity>
+        <activity android:name=".MagicActivity"></activity>
+        <activity android:name=".InicioActitivy" />
         <activity android:name=".RegistrarActivity" />
         <activity android:name=".SpashActivity">
             <intent-filter>
