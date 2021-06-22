@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/flow_navigation"
+    app:startDestination="@id/productoFragment">
+
+    <fragment
+        android:id="@+id/productoFragment"
+        android:name="edu.istea.fragments.ProductoFragment"
+        android:label="ProductoFragment" >
+        <action
+            android:id="@+id/action_productoFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="edu.istea.fragments.ItemFragment"
+        android:label="ItemFragment" >
+        <action
+            android:id="@+id/action_itemFragment_to_despachoFragment"
+            app:destination="@id/despachoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/despachoFragment"
+        android:name="edu.istea.fragments.DespachoFragment"
+        android:label="DespachoFragment" >
+        <action
+            android:id="@+id/action_despachoFragment_to_productoFragment"
+            app:destination="@id/productoFragment" />
+    </fragment>
+</navigation>

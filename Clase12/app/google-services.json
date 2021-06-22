@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "609923599078",
+    "project_id": "kotlinmartes",
+    "storage_bucket": "kotlinmartes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609923599078:android:70b3517702c57935730927",
+        "android_client_info": {
+          "package_name": "edu.istea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609923599078-hki9ei7iis8qdvhjmt9igagoh293619v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAduEL3jBDpY45PHmWISIA2WYIGKT-capU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609923599078-hki9ei7iis8qdvhjmt9igagoh293619v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

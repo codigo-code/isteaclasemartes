@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heladeria_navegation"
+    app:startDestination="@id/heladoFragment">
+
+    <fragment
+        android:id="@+id/heladoFragment"
+        android:name="edu.istea.view.HeladoFragment"
+        android:label="HeladoFragment" >
+        <action
+            android:id="@+id/actionHeladeriaToActividad"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/actionHeladeriaToCajero"
+            app:destination="@id/cajeroFragment2" />
+        <argument
+            android:name="heladoNavegacion"
+            app:argType="edu.istea.model.Helado"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="edu.istea.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/cajeroFragment2"
+        android:name="edu.istea.view.CajeroFragment"
+        android:label="CajeroFragment" />
+</navigation>

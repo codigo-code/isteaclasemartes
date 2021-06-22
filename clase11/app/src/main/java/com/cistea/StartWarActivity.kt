@@ -3,15 +3,19 @@ package com.cistea
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.cistea.api.ApiStarWar
+import com.cistea.api.ApiStarWarImplementation
 import com.cistea.model.StartWar
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 import java.lang.Exception
+import kotlin.system.exitProcess
 
 class StartWarActivity : AppCompatActivity() {
 
@@ -31,11 +35,17 @@ class StartWarActivity : AppCompatActivity() {
 
         initilize()
 
+        val v : ApiStarWarImplementation = ApiStarWarImplementation()
+
+
+
+
         try {
             // inicializamos la conexion contra el api ( me va a traer el obj 3 )
             var api = ApiStarWar.create().getPersonaje()
 
-            api.enqueue(object : Callback<StartWar> {
+            v.getPersona(2).enqueue(object : Callback<StartWar> {
+            //api.enqueue(object : Callback<StartWar> {
                 override fun onFailure(call: Call<StartWar>, t: Throwable) {
                     Toast.makeText(applicationContext,t.message,Toast.LENGTH_LONG).show()
 
@@ -67,6 +77,13 @@ class StartWarActivity : AppCompatActivity() {
         }
 
 
+        val finalizar:Button = findViewById(R.id.sw_finalizar)
+
+        finalizar.setOnClickListener(View.OnClickListener {
+            moveTaskToBack(true);
+            exitProcess(-1)
+        })
+
     }
 
 
@@ -83,4 +100,7 @@ class StartWarActivity : AppCompatActivity() {
         homeWolrd = findViewById(R.id.sw_homeworld)
 
     }
+
+
+
 }
